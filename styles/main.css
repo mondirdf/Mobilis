@@ -92,9 +92,13 @@ body.menu-open {
   color: rgba(71, 85, 105, 0.82);
 }
 
-.nav-logo-mark {
-  background: linear-gradient(135deg, rgba(34, 197, 94, 1), rgba(22, 163, 74, 0.72));
-  box-shadow: 0 12px 26px rgba(22, 163, 74, 0.25);
+.nav-logo-image-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-header.is-scrolled .nav-logo-image-wrap {
+  background: white;
+  border-color: rgba(226, 232, 240, 0.95);
 }
 
 .nav-links {
@@ -246,6 +250,25 @@ body.menu-open {
   box-shadow: var(--shadow-md);
 }
 
+.quick-action-card,
+.offer-card,
+.info-card,
+.stats-panel,
+.footer-shell {
+  position: relative;
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.quick-action-card:hover,
+.offer-card:hover,
+.info-card:hover,
+.stats-panel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(22, 163, 74, 0.22);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.1);
+}
+
 .metric-row {
   display: grid;
   grid-template-columns: 3rem 1fr;
@@ -320,23 +343,38 @@ body.menu-open {
   font-weight: 600;
 }
 
-.quick-action-card,
-.offer-card,
-.info-card,
-.stats-panel,
-.footer-shell {
+.visual-frame {
   position: relative;
-  overflow: hidden;
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.14);
 }
 
-.quick-action-card:hover,
-.offer-card:hover,
-.info-card:hover,
-.stats-panel:hover {
-  transform: translateY(-4px);
-  border-color: rgba(22, 163, 74, 0.22);
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.1);
+.visual-frame::after {
+  content: '';
+  position: absolute;
+  inset: auto 1.25rem 1.25rem auto;
+  width: 38%;
+  height: 26%;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.22), rgba(255, 255, 255, 0.05));
+  pointer-events: none;
+}
+
+.service-showcase {
+  background:
+    radial-gradient(circle at top left, rgba(22, 163, 74, 0.08), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: var(--shadow-lg);
+}
+
+.floating-insight {
+  max-width: 17rem;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .offer-card-featured,
@@ -351,6 +389,17 @@ body.menu-open {
   background: rgba(240, 253, 244, 1);
   color: var(--green-dark);
   border-color: rgba(22, 163, 74, 0.12);
+}
+
+.offer-tag {
+  color: #166534;
+  background: rgba(240, 253, 244, 1);
+  border: 1px solid rgba(187, 247, 208, 1);
+}
+
+.offer-tag-dot {
+  background: linear-gradient(180deg, #22c55e 0%, #15803d 100%);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
 }
 
 .offer-price {
@@ -371,6 +420,28 @@ body.menu-open {
   background: rgba(240, 253, 244, 1);
   color: var(--green-dark);
   font-weight: 900;
+}
+
+.phone-mockup {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid rgba(15, 23, 42, 0.75);
+  position: relative;
+}
+
+.phone-mockup::before {
+  content: '';
+  position: absolute;
+  top: 0.85rem;
+  left: 50%;
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateX(-50%);
+}
+
+.phone-screen {
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-shell {
@@ -469,5 +540,16 @@ body.menu-open {
   .metric-row {
     grid-template-columns: 2.5rem 1fr;
     gap: 0.75rem;
+  }
+
+  .nav-logo-image {
+    height: 1.75rem;
+  }
+
+  .floating-insight {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    max-width: none;
   }
 }
