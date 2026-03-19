@@ -18,8 +18,8 @@ export function Navbar() {
           </button>
 
           <a href="#top" class="nav-logo inline-flex items-center justify-center text-white" aria-label="Mobilis home">
-            <span class="nav-logo-image-wrap inline-flex items-center justify-center rounded-2xl bg-white/95 px-3 py-2 shadow-lg shadow-black/10">
-              <img src="./assets/mobilis-logo.svg" alt="Mobilis" class="nav-logo-image h-8 w-auto object-contain sm:h-9" />
+            <span class="nav-logo-image-wrap inline-flex items-center justify-center">
+              <img src="./assets/mobilis-logo.svg" alt="Mobilis" class="nav-logo-image h-10 w-auto object-contain sm:h-11" />
             </span>
           </a>
         </nav>
