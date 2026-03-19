@@ -8,7 +8,7 @@ import { Footer } from './footer.js';
 const app = document.querySelector('#app');
 
 app.innerHTML = `
-  <main class="pb-10">
+  <main class="pb-16 sm:pb-24">
     ${Hero()}
     ${Actions()}
     ${Offers()}
