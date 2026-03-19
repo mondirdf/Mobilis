@@ -2,7 +2,7 @@ import { appPromotion } from '../data/content.js';
 
 export function AppSection() {
   return `
-    <section id="app" class="section-shell section-block">
+    <section id="app-section" class="section-shell section-block">
       <div class="promo-shell overflow-hidden rounded-[2rem] p-6 sm:p-8 lg:p-10">
         <div class="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10">
           <div class="space-y-5">
