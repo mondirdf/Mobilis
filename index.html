@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobilis | عروض الإنترنت والخدمات</title>
+    <meta
+      name="description"
+      content="اكتشف عروض الإنترنت، عبّئ رصيدك بسرعة، واشترك في أفضل باقات الهاتف والبيانات في الجزائر."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                green: '#16a34a',
+                dark: '#0f172a',
+                panel: '#111827',
+                soft: '#1f2937',
+                text: '#e5e7eb'
+              }
+            },
+            boxShadow: {
+              glow: '0 20px 45px rgba(15, 23, 42, 0.35)'
+            },
+            backgroundImage: {
+              'hero-gradient': 'linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.7))'
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="bg-brand-dark text-white antialiased">
+    <div id="app"></div>
+    <script type="module" src="./components/app.js"></script>
+  </body>
+</html>
