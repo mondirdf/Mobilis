@@ -3,12 +3,16 @@ import { offers } from '../data/content.js';
 export function Offers() {
   const cards = offers
     .map(
-      ({ title, price, currency, period, features, badge, tone, icon }) => `
+      ({ title, price, currency, period, features, badge, tag, tone, icon }) => `
         <article class="offer-card ${tone === 'featured' ? 'offer-card-featured' : ''} flex flex-col gap-8 rounded-[1.75rem] p-7 sm:p-8">
           <div class="space-y-5">
             <div class="flex items-center justify-between gap-3">
               <span class="offer-badge inline-flex rounded-full px-4 py-2 text-xs font-extrabold ring-1">${badge}</span>
               <span class="offer-top-icon flex h-12 w-12 items-center justify-center rounded-2xl">${icon}</span>
+            </div>
+            <div class="offer-tag inline-flex w-fit items-center gap-2 rounded-full px-3 py-2 text-xs font-black">
+              <span class="offer-tag-dot h-2.5 w-2.5 rounded-full"></span>
+              ${tag}
             </div>
             <div class="space-y-4">
               <div>
@@ -38,7 +42,7 @@ export function Offers() {
               .join('')}
           </ul>
           <a
-            href="#app"
+            href="#app-section"
             class="cta-primary mt-auto inline-flex min-h-14 w-full items-center justify-center rounded-xl px-5 text-base font-extrabold text-white"
           >
             اشترك الآن
@@ -55,7 +59,7 @@ export function Offers() {
           <p class="section-kicker">العروض الأساسية</p>
           <h2 class="section-title">خيارات أوضح تساعد على قرار أسرع</h2>
         </div>
-        <p class="section-copy">أصبحت بطاقات العروض أكثر تنظيمًا مع إبراز السعر، تبسيط المزايا، وإضافة مؤشرات بصرية تمنح كل باقة شخصية أوضح بدون تعقيد.</p>
+        <p class="section-copy">أصبحت بطاقات العروض أكثر تنظيمًا مع إبراز السعر، تبسيط المزايا، وإضافة شارات بصرية صغيرة تمنح كل باقة شخصية أوضح بدون تعقيد.</p>
       </div>
       <div class="grid gap-6 lg:grid-cols-3 lg:gap-8">
         ${cards}

@@ -4,7 +4,7 @@ export const quickActions = [
   {
     label: 'تعبئة الرصيد',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="${iconBase}"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3.5M3 10.5h18M5 14h5m-5 3h7m8-4v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /></svg>`,
-    href: '#app',
+    href: '#app-section',
     description: 'إعادة الشحن بخطوات مختصرة مع واجهة أخف وزر واضح يسهل التنفيذ من الهاتف.'
   },
   {
@@ -16,7 +16,7 @@ export const quickActions = [
   {
     label: 'تتبع الاستهلاك',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="${iconBase}"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3m15.5-5.5a9 9 0 0 1 0 11M5.5 6.5a9 9 0 0 0 0 11" /></svg>`,
-    href: '#app',
+    href: '#app-section',
     description: 'عرض مباشر للرصيد والبيانات والمكالمات داخل لوحة موحدة بتسلسل مريح.'
   }
 ];
@@ -29,6 +29,7 @@ export const offers = [
     period: 'شهريًا',
     features: ['20GB إنترنت', 'تفعيل فوري', 'مكالمات غير محدودة'],
     badge: 'الأكثر اختيارًا',
+    tag: 'أفضل عرض',
     tone: 'standard',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="${iconBase}"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20h16M7 16v-2m5 2V8m5 8V4" /></svg>`
   },
@@ -39,6 +40,7 @@ export const offers = [
     period: '30 يومًا',
     features: ['40GB إنترنت', 'هدية ليلية', 'أفضل قيمة للمستخدم المكثف'],
     badge: 'الباقة المميزة',
+    tag: 'الأكثر قيمة',
     tone: 'featured',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="${iconBase}"><path stroke-linecap="round" stroke-linejoin="round" d="M13 3 4 14h7l-1 7 9-11h-7Z" /></svg>`
   },
@@ -49,6 +51,7 @@ export const offers = [
     period: 'شهريًا',
     features: ['15GB + 500 دقيقة', 'مرونة يومية', 'مناسب للعمل والترفيه'],
     badge: 'حل متوازن',
+    tag: 'مرن يوميًا',
     tone: 'standard',
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="${iconBase}"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm4 13h2" /></svg>`
   }
@@ -99,5 +102,5 @@ export const appPromotion = {
 export const footerLinks = [
   { label: 'العروض', href: '#offers' },
   { label: 'الإجراءات', href: '#actions' },
-  { label: 'التطبيق', href: '#app' }
+  { label: 'التطبيق', href: '#app-section' }
 ];

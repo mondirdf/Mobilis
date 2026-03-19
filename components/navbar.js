@@ -4,10 +4,12 @@ export function Navbar() {
       <div class="section-shell">
         <nav class="nav-shell mt-4 flex items-center justify-between gap-4 rounded-full px-4 py-3 sm:px-6">
           <a href="#top" class="nav-logo inline-flex items-center gap-3 text-white" aria-label="Mobilis home">
-            <span class="nav-logo-mark inline-flex h-11 w-11 items-center justify-center rounded-2xl">M</span>
+            <span class="nav-logo-image-wrap inline-flex items-center justify-center rounded-2xl bg-white/95 px-3 py-2 shadow-lg shadow-black/10">
+              <img src="./assets/mobilis-logo.svg" alt="Mobilis" class="nav-logo-image h-8 w-auto sm:h-9" />
+            </span>
             <span class="text-right leading-tight">
-              <strong class="block text-base font-black">Mobilis</strong>
-              <span class="block text-xs font-semibold text-white/70">Internet & Services</span>
+              <strong class="block text-base font-black">موبيليس</strong>
+              <span class="block text-xs font-semibold text-white/70">Digital mobile experience</span>
             </span>
           </a>
 
@@ -28,11 +30,11 @@ export function Navbar() {
           <div class="hidden items-center gap-3 lg:flex">
             <div class="nav-links flex items-center gap-2 rounded-full px-2 py-2">
               <a href="#offers" class="nav-link">العروض</a>
-              <a href="#services" class="nav-link">الخدمات</a>
+              <a href="#services" class="nav-link">كيف تعمل</a>
               <a href="#app-section" class="nav-link">التطبيق</a>
             </div>
-            <a href="#" class="nav-cta inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-extrabold text-white">
-              تسجيل الدخول
+            <a href="#app-section" class="nav-cta inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-extrabold text-white">
+              ابدأ الآن
             </a>
           </div>
         </nav>
@@ -40,10 +42,10 @@ export function Navbar() {
         <div id="mobile-menu" class="mobile-menu mt-3 hidden rounded-[1.5rem] px-4 py-4 lg:hidden">
           <div class="flex flex-col gap-2 text-right">
             <a href="#offers" class="mobile-nav-link">العروض</a>
-            <a href="#services" class="mobile-nav-link">الخدمات</a>
+            <a href="#services" class="mobile-nav-link">كيف تعمل</a>
             <a href="#app-section" class="mobile-nav-link">التطبيق</a>
-            <a href="#" class="nav-cta mt-2 inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-extrabold text-white">
-              تسجيل الدخول
+            <a href="#app-section" class="nav-cta mt-2 inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-extrabold text-white">
+              ابدأ الآن
             </a>
           </div>
         </div>
