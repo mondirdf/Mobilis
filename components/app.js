@@ -45,6 +45,10 @@ navToggle?.addEventListener('click', () => {
 
 mobileLinks.forEach((link) => link.addEventListener('click', closeMobileMenu));
 window.addEventListener('scroll', syncHeader, { passive: true });
-window.addEventListener('resize', closeMobileMenu);
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1024) {
+    closeMobileMenu();
+  }
+});
 
 syncHeader();
