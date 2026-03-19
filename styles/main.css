@@ -71,8 +71,8 @@ body.menu-open {
   border: 1px solid rgba(255, 255, 255, 0.16);
   background: rgba(15, 23, 42, 0.2);
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.14);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .site-header.is-scrolled .nav-shell,
@@ -89,16 +89,17 @@ body.menu-open {
 }
 
 .nav-logo-image-wrap {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 0;
 }
 
 .nav-logo-image {
   display: block;
+  width: 126px;
+  height: 40px;
 }
 
 .site-header.is-scrolled .nav-logo-image-wrap {
-  background: white;
-  border-color: rgba(226, 232, 240, 0.95);
+  background: transparent;
 }
 
 .nav-links {
@@ -543,7 +544,8 @@ body.menu-open {
   }
 
   .nav-logo-image {
-    height: 1.75rem;
+    width: 126px;
+    height: 40px;
   }
 
   .floating-insight {
