@@ -69,16 +69,14 @@ body.menu-open {
 .nav-shell,
 .mobile-menu {
   border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(15, 23, 42, 0.2);
+  background: rgba(15, 23, 42, 0.4);
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.14);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 }
 
 .site-header.is-scrolled .nav-shell,
 .site-header.is-scrolled .mobile-menu {
   border-color: rgba(226, 232, 240, 0.9);
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
 
@@ -88,18 +86,17 @@ body.menu-open {
   color: var(--text);
 }
 
-.nav-logo-image-wrap {
+.nav-logo {
   line-height: 0;
 }
 
 .nav-logo-image {
   display: block;
-  width: 168px;
-  height: 58px;
-}
-
-.site-header.is-scrolled .nav-logo-image-wrap {
-  background: transparent;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .nav-links {
@@ -544,8 +541,8 @@ body.menu-open {
   }
 
   .nav-logo-image {
-    width: 126px;
-    height: 40px;
+    width: auto;
+    height: 48px;
   }
 
   .floating-insight {
