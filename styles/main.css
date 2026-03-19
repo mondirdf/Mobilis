@@ -88,12 +88,12 @@ body.menu-open {
   color: var(--text);
 }
 
-.site-header.is-scrolled .nav-logo span:last-child span:last-child {
-  color: rgba(71, 85, 105, 0.82);
-}
-
 .nav-logo-image-wrap {
   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-logo-image {
+  display: block;
 }
 
 .site-header.is-scrolled .nav-logo-image-wrap {
